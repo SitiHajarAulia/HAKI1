@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Pendaftaran HAKI</title>
+  <style>
+    body { 
+      font-family: "Georgia", serif; 
+      background-color: #f4f1e3; 
+      color: #2b2b2b; 
+      margin:0; 
+      font-size: 18px; /* diperbesar sedikit */
+      line-height: 1.6;
+    }
+    header { 
+      background-color: #5a4632; 
+      color: white; 
+      padding: 15px; 
+      text-align: center; 
+    }
+    nav { 
+      background-color: #7b614a; 
+      padding: 10px; 
+      text-align: center; 
+    }
+    nav a { 
+      color: white; 
+      text-decoration: none; 
+      margin: 0 15px; 
+      font-weight: bold; 
+      font-size: 16px;
+    }
+    nav a:hover { 
+      text-decoration: underline; 
+      color: #ffe5a1; 
+    }
+    main { 
+      padding: 20px; 
+      max-width: 800px; 
+      margin: auto; 
+    }
+    h1 { font-size: 26px; }
+    p { margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kapan Seseorang Dapat Mendaftarkan Hak Karya Intelektual?</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="pengertian.html">Pengertian</a>
+    <a href="macam.html">Macam</a>
+    <a href="fungsi.html">Fungsi</a>
+    <a href="pendaftaran.html">Pendaftaran</a>
+  </nav>
+
+  <main>
+    <p>Siapapun berhak mengajukan permohonan atau mendaftarkan HAKI. Hak eksklusif yang diberikan negara kepada individu pelaku HAKI (inventor, pencipta, pendesain, dan sebagainya) tidak lain dimaksud sebagai penghargaan atas hasil karya (kreativitas)nya dan agar orang lain terangsang untuk lebih lanjut mengembangkan lagi, sehingga dengan sistem HAKI tersebut kepentingan masyarakat ditentukan melalui mekanisme pasar.</p>
+
+    <p>Di samping itu, sistem HAKI menunjang diadakannya sistem dokumentasi yang baik atas bentuk kreativitas manusia sehingga kemungkinan dihasilkan teknologi atau hasil karya lain yang sama dapat dihindarkan/dicegah.</p>
+
+    <p>Dengan dukungan dokumentasi yang baik tersebut, diharapkan masyarakat dapat memanfaatkan dengan maksimal untuk keperluan hidup atau mengembangkan lebih lanjut untuk memberikan nilai tambah yang lebih tinggi lagi.</p>
+  </main>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => { document.body.classList.add("fade-in"); });
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const href = link.getAttribute("href");
+        document.body.classList.remove("fade-in");
+        setTimeout(() => { window.location.href = href; }, 500);
+      });
+    });
+  </script>
+</body>
+</html>

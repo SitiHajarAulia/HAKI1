@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Macam-Macam HAKI</title>
+  <style>
+    body { font-family: "Georgia", serif; background-color: #f4f1e3; color: #2b2b2b; margin:0; }
+    header { background-color: #5a4632; color: white; padding: 15px; text-align: center; }
+    nav { background-color: #7b614a; padding: 10px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; color: #ffe5a1; }
+    main { padding: 20px; max-width: 800px; margin: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Macam-Macam HAKI</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="pengertian.html">Pengertian</a>
+    <a href="macam.html">Macam</a>
+    <a href="fungsi.html">Fungsi</a>
+    <a href="pendaftaran.html">Pendaftaran</a>
+  </nav>
+
+  <main>
+    <p>Secara garis besar HaKI dibagi dalam 2 (dua) bagian, yaitu:</p>
+
+    <h2>1. Hak Cipta (Copyright)</h2>
+    <p>Hak Cipta adalah hak eksklusif pencipta yang timbul secara otomatis berdasarkan prinsip deklaratif setelah suatu ciptaan diwujudkan dalam bentuk nyata.</p>
+
+    <h2>2. Hak Kekayaan Industri (Industrial Property Rights)</h2>
+    <ul>
+      <li>Paten (patent)</li>
+      <li>Desain industri (industrial design)</li>
+      <li>Merek (trademark)</li>
+      <li>Penanggulangan praktik persaingan curang</li>
+      <li>Desain tata letak sirkuit terpadu</li>
+      <li>Rahasia dagang (trade secret)</li>
+    </ul>
+  </main>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => { document.body.classList.add("fade-in"); });
+    document.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const href = link.getAttribute("href");
+        document.body.classList.remove("fade-in");
+        setTimeout(() => { window.location.href = href; }, 500);
+      });
+    });
+  </script>
+</body>
+</html>
